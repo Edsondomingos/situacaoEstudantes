@@ -1,0 +1,11 @@
+{
+  "name": "situacaoestudantes",
+  "version": "1.0.0",
+  "description": "Site para saber como esta a situação dos estudantes. Cursando, formado, Empregado, cursos...",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec node index.js"
+  },
+  "author": "Edson Domingos",
+  "license": "ISC"
+}
