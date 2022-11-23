@@ -26,112 +26,117 @@
             <input type="text" id="cep">
         </p>
         <p>
-            <label for="curso">Você faz algum curso?</label>
-            <input type="radio" name="estuda" id="" value="Sim">
+            <label for="curso" id="fez">Já fez algum curso?</label>
+            <!-- <legend>Profissionalizante, Técnico, Tecnologo, Bacharelado, Lincenciatura, Pós-Graducao, Mestrado, Doutorado ou Pós Doutorado</legend> -->
+            <input type="radio" name="fez" id="" value="sim">
             <label for="">Sim</label>
-            <input type="radio" name="estuda" id="" value="Não">
+            <input type="radio" name="fez" id="" value="nao" checked>
             <label for="">Não</label>
         </p>
-        <p>
+        <!-- <p>
             <label for="curso">Quantos cursos já fez?</label>
-            <input type="radio" name="qtd" id="" value="Sim">
-            <label for="">Sim</label>
-            <input type="radio" name="qtd" id="" value="Não">
-            <label for="">Não</label>
-        </p>
-        <p>
-            <label for="curso">Já fez algum curso?</label>
-            <input type="radio" name="fez" id="" value="Sim">
-            <label for="">Sim</label>
-            <input type="radio" name="fez" id="" value="Não">
-            <label for="">Não</label>
-        </p>
-        <p>
-            <label for="">Instituição</label>
-            <select name="" id="">
-                <option value="">IFRN - Canguaretama</option>
-                <option value="">UNP - SAlgado filho</option>
-                <option value="">Adicionar nova Instituição</option>
-            </select>
-        </p>
-        <p>
-            <label for="">Tipo de curso</label>
-            <select name="" id="">
-                <option value="">Profissionalizante</option>
-                <option value="">Técnico</option>
-                <option value="">tecnólogo</option>
-                <option value="">Bacharelado</option>
-                <option value="">Lincenciatura</option>
-                <option value="">Pós-Graducao</option>
-                <option value="">Mestrado</option>
-                <option value="">Doutorado</option>
-                <option value="">Pós Doutorado</option>
-            </select>
-        </p>
-        <p>
-            <label for="">Modo do curso</label>
-            <select name="" id="">
-                <option value="">Presencial</option>
-                <option value="">Semi Presencial</option>
-                <option value="">EAD</option>
-            </select>
-        </p>
-        <p>
-            <label for="">Turno</label>
-            <select name="" id="">
-                <option value="">Manhã</option>
-                <option value="">Tarde</option>
-                <option value="">Noite</option>
-                <option value="">Horario fléxivel</option>
-            </select>
-        </p>
-        <p>
-            <label for="curso">Pretende Fazer?</label>
-            <input type="radio" name="pretende" id="" value="Sim">
-            <label for="">Sim</label>
-            <input type="radio" name="pretende" id="" value="Não">
-            <label for="">Não</label>
-        </p>
-        <p>
-            <label for="curso">Curso</label>
-            <select name="" id="">
-                <option value="">Sistemas para Internet</option>
-                <option value="">Psicologia</option>
-                <option value="">Adicionar novo curso</option>
-            </select>
-        </p>
-        <p>
-            <label>Situação no curso</label>
-            <select name="" id="">
-                <option value="">Cursando</option>
-                <option value="">Finalizado</option>
-            </select>
-            <label>Quantidade de semestres/periodos</label>
             <select name="" id="">
                 <option value="">1</option>
                 <option value="">2</option>
+                <option value="">3</option>
             </select>
-        </p>
-        <p>
-            <label>Semetre de conclusão</label>
-            <select name="" id="">
-                <option value="">2020.1</option>
-                <option value="">2020.2</option>
-            </select><br>
-
-            <label>Esta trabalhando?</label>
-            <input type="radio" name="trabalhando" id="" value="Sim">
+        </p> -->
+        <!-- <p>
+            <label for="curso">Esta fazendo algum curso?</label>
+            <input type="radio" name="estuda" id="" value="sim">
             <label for="">Sim</label>
-            <input type="radio" name="trabalhando" id="" value="Não">
-            <label for="">Não</label><br>
-
-            <label>Trabalha na área?</label>
-            <input type="radio" name="area" id="" value="Sim">
-            <label for="">Sim</label>
-            <input type="radio" name="area" id="" value="Não">
+            <input type="radio" name="estuda" id="" value="nao">
             <label for="">Não</label>
-        </p>
-        <p>
+        </p> -->
+        <button onclick="novoCurso()" id="add">Adicionar curso</button>
+        <section id="curso">
+            <p>
+                <label for="">Instituição</label>
+                <select name="" id="">
+                    <option value="">IFRN - Canguaretama</option>
+                    <option value="">UNP - SAlgado filho</option>
+                    <option value="">Adicionar nova Instituição</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Tipo de curso</label>
+                <select name="" id="">
+                    <option value="">Profissionalizante</option>
+                    <option value="">Técnico</option>
+                    <option value="">tecnólogo</option>
+                    <option value="">Bacharelado</option>
+                    <option value="">Lincenciatura</option>
+                    <option value="">Pós-Graducao</option>
+                    <option value="">Mestrado</option>
+                    <option value="">Doutorado</option>
+                    <option value="">Pós Doutorado</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Modo do curso</label>
+                <select name="" id="">
+                    <option value="">Presencial</option>
+                    <option value="">Semi Presencial</option>
+                    <option value="">EAD</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Turno</label>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                    <option value="">Horario fléxivel</option>
+                </select>
+            </p>
+            <p>
+                <label for="curso">Pretende Fazer?</label>
+                <input type="radio" name="pretende" id="" value="sim">
+                <label for="">Sim</label>
+                <input type="radio" name="pretende" id="" value="nao">
+                <label for="">Não</label>
+            </p>
+            <p>
+                <label for="curso">Curso</label>
+                <select name="" id="">
+                    <option value="">Sistemas para Internet</option>
+                    <option value="">Psicologia</option>
+                    <option value="">Adicionar novo curso</option>
+                </select>
+            </p>
+            <p>
+                <label>Situação no curso</label>
+                <select name="" id="">
+                    <option value="">Cursando</option>
+                    <option value="">Finalizado</option>
+                </select>
+                <label>Quantidade de semestres/periodos</label>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </p>
+            <p>
+                <label>Semetre de conclusão</label>
+                <select name="" id="">
+                    <option value="">2020.1</option>
+                    <option value="">2020.2</option>
+                </select><br>
+
+                <label>Esta trabalhando?</label>
+                <input type="radio" name="trabalhando" id="" value="sim">
+                <label for="">Sim</label>
+                <input type="radio" name="trabalhando" id="" value="nao">
+                <label for="">Não</label><br>
+
+                <label>Trabalha na área?</label>
+                <input type="radio" name="area" id="" value="sim">
+                <label for="">Sim</label>
+                <input type="radio" name="area" id="" value="nao">
+                <label for="">Não</label>
+            </p>
+            <p>
+        </section>
             <label for="usuario">Usuário</label>
             <input type="text" id="usuario">
         </p>
@@ -142,5 +147,22 @@
         <button type="submit">Criar Conta</button>
     </form>
     
+    <script>
+        const fez = document.getElementsByName('fez')
+        const curso = document.getElementById('curso')
+        const add = document.getElementById('add')
+        fez.forEach(e => e.addEventListener('click', event => {
+            if (event.value == 'nao'){
+                add.style.display = 'block'
+            } else {
+                add.style.display = 'none'
+            }
+        }))
+        
+        curso.style.display = 'none'
+        function novoCurso() {
+            curso.style.display = 'block'
+        }
+    </script>
 </body>
 </html>
