@@ -4,8 +4,17 @@
   "description": "Site para saber como esta a situação dos estudantes. Cursando, formado, Empregado, cursos...",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon --exec node index.js"
+    "start": "nodemon --exec node index.js"
   },
   "author": "Edson Domingos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
